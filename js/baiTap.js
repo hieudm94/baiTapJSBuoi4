@@ -771,11 +771,11 @@ function doanDuongDN() {
     }else if(dSV3 > dSV1 && dSV3 > dSV2){
         document.getElementById("txtResultDuongDN").innerHTML= "Sinh viên có đoạn đường dài nhất là: " +  tenSV3;
     }else if(dSV2 == dSV1 && dSV2 > dSV3){
-        document.getElementById("txtResultDuongDN").innerHTML= "Sinh viên có đoạn đường dài nhất là: " +  tenSV2 + tenSV1 ;
+        document.getElementById("txtResultDuongDN").innerHTML= "Sinh viên có đoạn đường dài nhất là: " +  tenSV2 +", " + tenSV1 ;
     }else if(dSV2 == dSV3 && dSV2 > dSV1){
-        document.getElementById("txtResultDuongDN").innerHTML= "Sinh viên có đoạn đường dài nhất là: " +  tenSV2 + tenSV3 ;
+        document.getElementById("txtResultDuongDN").innerHTML= "Sinh viên có đoạn đường dài nhất là: " +  tenSV2 +", " + tenSV3 ;
     }else if(dSV1 == dSV3 && dSV1 > dSV2){
-        document.getElementById("txtResultDuongDN").innerHTML= "Sinh viên có đoạn đường dài nhất là: " +  tenSV1 + tenSV3 ;
+        document.getElementById("txtResultDuongDN").innerHTML= "Sinh viên có đoạn đường dài nhất là: " +  tenSV1 +", " + tenSV3 ;
     }else{
         document.getElementById("txtResultDuongDN").innerHTML= "Ba sinh viên có đoạn đường dài như nhau";
 
