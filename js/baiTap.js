@@ -211,7 +211,7 @@ document.getElementById("SUBMIT").onclick = checkTamGiac;
 
 // ?Khối 2: các bước xử lý code 
 /**
- *  B1: Tạo biến cho Ngay, Thang, Nam
+ *  B1: Tạo biến cho ngay, thang, nam
  *  B2: Gán giá trị biến cho 3 biến vừa tạo;
  *  B3: Lập công thức tính toán:
  * 
@@ -255,73 +255,73 @@ document.getElementById("SUBMIT").onclick = checkTamGiac;
 
 
 function ngayHomQua() {
-    var Ngay = Number(document.getElementById("date").value);
-    var Thang = Number(document.getElementById("month").value);
-    var Nam = Number(document.getElementById("year").value);
+    var ngay = Number(document.getElementById("date").value);
+    var thang = Number(document.getElementById("month").value);
+    var nam = Number(document.getElementById("year").value);
 
-    if (Ngay == 1 && Thang == 1) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/12" + "/" + (Nam - 1);
-    } else if (Ngay == 1 && Thang == 2) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/1" + "/" + Nam;
-    } else if (Ngay == 1 && Thang == 3) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "28/2" + "/" + Nam;
-    } else if (Ngay == 1 && Thang == 4) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/3" + "/" + Nam;
-    } else if (Ngay == 1 && Thang == 5) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "30/4" + "/" + Nam;
-    } else if (Ngay == 1 && Thang == 6) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/5" + "/" + Nam;
-    } else if (Ngay == 1 && Thang == 7) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "30/6" + "/" + Nam;
-    } else if (Ngay == 1 && Thang == 8) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/7" + "/" + Nam;
-    } else if (Ngay == 1 && Thang == 9) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/8" + "/" + Nam;
-    } else if (Ngay == 1 && Thang == 10) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "30/9" + "/" + Nam;
-    } else if (Ngay == 1 && Thang == 11) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/10" + "/" + Nam;
-    } else if (Ngay == 1 && Thang == 12) {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "30/11" + "/" + Nam;
+    if (ngay == 1 && thang == 1) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/12" + "/" + (nam - 1);
+    } else if (ngay == 1 && thang == 2) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/1" + "/" + nam;
+    } else if (ngay == 1 && thang == 3) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "28/2" + "/" + nam;
+    } else if (ngay == 1 && thang == 4) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/3" + "/" + nam;
+    } else if (ngay == 1 && thang == 5) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "30/4" + "/" + nam;
+    } else if (ngay == 1 && thang == 6) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/5" + "/" + nam;
+    } else if (ngay == 1 && thang == 7) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "30/6" + "/" + nam;
+    } else if (ngay == 1 && thang == 8) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/7" + "/" + nam;
+    } else if (ngay == 1 && thang == 9) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/8" + "/" + nam;
+    } else if (ngay == 1 && thang == 10) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "30/9" + "/" + nam;
+    } else if (ngay == 1 && thang == 11) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "31/10" + "/" + nam;
+    } else if (ngay == 1 && thang == 12) {
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + "30/11" + "/" + nam;
     } else {
-        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + (Ngay - 1) + "/" + Thang + "/" + Nam;
+        document.getElementById("txtResult4").innerHTML = "Ngày hôm qua là:" + (ngay - 1) + "/" + thang + "/" + nam;
 
     }
 }
 
 function ngayMai() {
-    var Ngay = Number(document.getElementById("date").value);
-    var Thang = Number(document.getElementById("month").value);
-    var Nam = Number(document.getElementById("year").value);
+    var ngay = Number(document.getElementById("date").value);
+    var thang = Number(document.getElementById("month").value);
+    var nam = Number(document.getElementById("year").value);
 
 
 
-    if (Ngay == 31 && Thang == 12) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/1" + "/" + (Nam + 1);
-    } else if (Ngay == 31 && Thang == 1) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/2" + "/" + Nam;
-    } else if (Ngay == 28 && Thang == 2) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/3" + "/" + Nam;
-    } else if (Ngay == 31 && Thang == 3) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/4" + "/" + Nam;
-    } else if (Ngay == 30 && Thang == 4) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/5" + "/" + Nam;
-    } else if (Ngay == 31 && Thang == 5) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/6" + "/" + Nam;
-    } else if (Ngay == 30 && Thang == 6) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/7" + "/" + Nam;
-    } else if (Ngay == 31 && Thang == 7) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/8" + "/" + Nam;
-    } else if (Ngay == 31 && Thang == 8) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/9" + "/" + Nam;
-    } else if (Ngay == 30 && Thang == 9) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/10" + "/" + Nam;
-    } else if (Ngay == 31 && Thang == 10) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/11" + "/" + Nam;
-    } else if (Ngay == 30 && Thang == 11) {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/12" + "/" + Nam;
+    if (ngay == 31 && thang == 12) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/1" + "/" + (nam + 1);
+    } else if (ngay == 31 && thang == 1) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/2" + "/" + nam;
+    } else if (ngay == 28 && thang == 2) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/3" + "/" + nam;
+    } else if (ngay == 31 && thang == 3) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/4" + "/" + nam;
+    } else if (ngay == 30 && thang == 4) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/5" + "/" + nam;
+    } else if (ngay == 31 && thang == 5) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/6" + "/" + nam;
+    } else if (ngay == 30 && thang == 6) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/7" + "/" + nam;
+    } else if (ngay == 31 && thang == 7) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/8" + "/" + nam;
+    } else if (ngay == 31 && thang == 8) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/9" + "/" + nam;
+    } else if (ngay == 30 && thang == 9) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/10" + "/" + nam;
+    } else if (ngay == 31 && thang == 10) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/11" + "/" + nam;
+    } else if (ngay == 30 && thang == 11) {
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + "1/12" + "/" + nam;
     } else {
-        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + (Ngay + 1) + "/" + Thang + "/" + Nam;
+        document.getElementById("txtResult5").innerHTML = "Ngày mai là:" + (ngay + 1) + "/" + thang + "/" + nam;
 
     }
 }
